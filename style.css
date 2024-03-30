@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+    font-family: Hanken Grotesk;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    color: white;
+    border-radius: 25px;
+    display: grid;
+    grid-template: auto / 100%;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.229);
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template: 100% / 50% 50%;
+    }
+}
+
+.first {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+}
+
+.lable {
+    color: rgba(255, 255, 255, 0.759);
+}
+
+.ball {
+    margin: 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.group1 {
+    top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.big {
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 35px;
+    line-height: 0;
+}
+
+.small {
+    color: rgba(255, 255, 255, 0.502);
+    font-size: 12px;
+}
+
+.info {
+    margin: 0px 0px 25px;
+    color: rgba(255, 255, 255, 0.539);
+    width: 75%;
+    text-align: center;
+}
+
+.second {
+    width: 80%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.box{
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    background: hsla(0, 100%, 67%, 0.073);
+    border-radius: 10px;
+}
+.box:nth-child(3){
+    color: hsl(39, 100%, 56%);
+    background:  hsla(39, 100%, 56%, 0.073);
+}
+.box:nth-child(4){
+    color: hsl(166, 100%, 37%);
+    background:  hsl(166, 100%, 37%, 0.073);
+}
+.box:nth-child(5){
+    color: hsl(234, 85%, 45%);
+    background:  hsl(234, 85%, 45%, 0.073);
+}
+
+.lable2{
+    margin: 0 0 10px ;
+    font-size: 25px;
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+.fade{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.612);
+}
+button{
+    width: 95%;
+    font-size: 15px;
+    border-radius: 20px;
+    color: white;
+    background: hsl(224, 30%, 27%);
+    border: 0;
+    padding: 10px 35% 10px;
+}
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
